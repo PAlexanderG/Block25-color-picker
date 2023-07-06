@@ -1,4 +1,7 @@
 // Write your Color component here
+const Color = ({ color }) => {
+  return <div className={color}></div>;
+};
 
 const App = () => {
   return (
@@ -7,7 +10,12 @@ const App = () => {
         <div>Currently selected: </div>
         <div className="red">red</div>
       </div>
-      <div id="colors-list">{/* colors go here */}</div>
+      <div id="colors-list">
+        <Color color="orange" />
+        <Color color="violet" />
+        <Color color="red" />
+      </div>
+      ;
     </div>
   );
 };
